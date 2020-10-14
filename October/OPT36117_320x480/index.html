@@ -288,8 +288,8 @@
           ctaBtn.classList.toggle('hovered');
         }
 
-        exit.addEventListener('mouseenter', e => { ctaOnHover() });
-        exit.addEventListener('mouseout', e => { ctaOnHover() })
+        exit.addEventListener('mouseenter', ctaOnHover);
+        exit.addEventListener('mouseout', ctaOnHover);
       }
 
       function preload() {
